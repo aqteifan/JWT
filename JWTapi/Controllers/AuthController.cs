@@ -36,7 +36,7 @@ namespace JWTapi.Controllers
                         (
                         issuer: "https://yo.com",
                         audience: "https://yo.com",
-                        expires: DateTime.Now.AddMinutes(120),
+                        expires: DateTime.UtcNow.AddMinutes(2),
                         //Claims are used to keep track of user information
                         claims: claims,
                         //SingingCredentials will contain the encrypted password
